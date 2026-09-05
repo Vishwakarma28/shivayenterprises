@@ -493,6 +493,7 @@ img {
   justify-content: center;
   box-shadow: 0 3px 12px rgba(0,0,0,0.22);
   transition: transform 0.2s;
+  animation: floating-icon-bob 1.4s ease-in-out infinite;
 }
 
 .floating-btn:hover {
@@ -500,17 +501,23 @@ img {
 }
 
 .floating-btn--call {
-  background: #34b7f1;
+  background: #20d366;
 }
 
 .floating-btn--whatsapp {
   background: #25d366;
+  box-shadow: 0 0 0 8px rgba(43,76,190,0.55), 0 3px 12px rgba(0,0,0,0.22);
 }
 
 .floating-btn svg {
   width: 24px;
   height: 24px;
   fill: #fff;
+}
+
+@keyframes floating-icon-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 /* ========================
