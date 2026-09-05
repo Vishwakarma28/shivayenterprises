@@ -110,6 +110,10 @@ body {
   margin: 0 auto;
 }
 
+.privacy-footer__grid {
+  grid-template-columns: 1.45fr 1fr 1fr;
+}
+
 .terms-footer__brand,
 .terms-footer__column {
   display: flex;
