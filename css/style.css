@@ -397,7 +397,7 @@ img {
    WHY CHOOSE US
 ======================== */
 .why-choose {
-  background: #f7f8fa;
+  background: #fff;
   padding: 58px 0 66px;
   text-align: center;
 }
@@ -468,7 +468,7 @@ img {
 ======================== */
 .reviews {
   background: #fff;
-  padding: 82px 0 94px;
+  padding: 60px 0 70px;
   text-align: center;
 }
 
@@ -487,27 +487,27 @@ img {
 
 .reviews__heading {
   color: #0d4a82;
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 58px;
+  margin-bottom: 40px;
 }
 
 .reviews__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 38px;
+  gap: 28px;
   text-align: left;
 }
 
 .review-card {
-  min-height: 400px;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
-  background: #124d82;
-  border: 1px solid transparent;
+  background: #fff;
+  border: 1px solid #e8edf3;
   border-radius: 10px;
   box-shadow: 0 12px 26px rgba(16,27,51,0.14);
-  padding: 48px 40px 40px;
+  padding: 34px 30px 28px;
 }
 
 .review-card--featured {
@@ -519,13 +519,13 @@ img {
   font-size: 1.25rem;
   letter-spacing: 2px;
   line-height: 1;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .review-card__text {
   flex: 1;
-  color: #f4f7fb;
-  font-size: 1rem;
+  color: #536273;
+  font-size: 0.92rem;
   font-style: italic;
   line-height: 1.7;
   margin: 0;
@@ -534,14 +534,14 @@ img {
 .review-card__customer {
   display: flex;
   align-items: center;
-  gap: 20px;
-  border-top: 1px solid rgba(255,255,255,0.18);
-  padding-top: 24px;
+  gap: 16px;
+  border-top: 1px solid #e1e7ed;
+  padding-top: 18px;
 }
 
 .review-card__avatar {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,13 +549,13 @@ img {
   border-radius: 50%;
   background: #f5a21b;
   color: #111;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
 .review-card__customer p {
-  color: #fff;
-  font-size: 1rem;
+  color: #123d70;
+  font-size: 0.92rem;
   font-weight: 700;
   margin: 0;
 }
