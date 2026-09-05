@@ -143,12 +143,12 @@ body {
   max-width: 410px;
 }
 
-.terms-footer__cities p {
-  white-space: nowrap;
-}
-
 .terms-footer__column {
   gap: 14px;
+}
+
+.terms-footer__cities {
+  white-space: nowrap;
 }
 
 .terms-footer__column h2 {
