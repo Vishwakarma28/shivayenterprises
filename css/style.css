@@ -464,6 +464,103 @@ img {
 }
 
 /* ========================
+   CUSTOMER REVIEWS
+======================== */
+.reviews {
+  background: #fff;
+  padding: 82px 0 94px;
+  text-align: center;
+}
+
+.reviews__badge {
+  display: inline-block;
+  margin-bottom: 26px;
+  padding: 9px 23px;
+  border: 1px solid #f6b24a;
+  border-radius: 24px;
+  background: #fff8e9;
+  color: #ed9413;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.reviews__heading {
+  color: #0d4a82;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 58px;
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+  text-align: left;
+}
+
+.review-card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  background: #124d82;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 12px 26px rgba(16,27,51,0.14);
+  padding: 48px 40px 40px;
+}
+
+.review-card--featured {
+  border-color: #f1a11b;
+}
+
+.review-card__stars {
+  color: #ffab1c;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 34px;
+}
+
+.review-card__text {
+  flex: 1;
+  color: #f4f7fb;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.review-card__customer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  padding-top: 24px;
+}
+
+.review-card__avatar {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f5a21b;
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.review-card__customer p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ========================
    CONTACT SECTION
 ======================== */
 .contact {
@@ -627,6 +724,12 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .reviews__grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
   .services__grid {
     gap: 18px;
   }
@@ -686,6 +789,20 @@ img {
 
   .section-title {
     font-size: 1.6rem;
+  }
+
+  .reviews {
+    padding: 58px 0 68px;
+  }
+
+  .reviews__heading {
+    font-size: 1.8rem;
+    margin-bottom: 38px;
+  }
+
+  .review-card {
+    min-height: 340px;
+    padding: 36px 28px 30px;
   }
 
   .about {
