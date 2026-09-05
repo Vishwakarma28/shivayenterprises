@@ -602,6 +602,10 @@ img {
   margin: 0;
 }
 
+.contact__cities p {
+  white-space: nowrap;
+}
+
 .contact__brand p {
   max-width: 410px;
 }
