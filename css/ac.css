@@ -13,6 +13,180 @@ img { display: block; max-width: 100%; }
 .ac-header__call, .ac-button { border-radius: 5px; font-weight: 700; transition: transform .2s, background .2s; }
 .ac-header__call { background: #124d82; color: #fff; font-size: .85rem; padding: 10px 18px; }
 .ac-header__call:hover, .ac-button:hover { transform: translateY(-2px); }
+.washing-machine-page {
+  background: #ffffff;
+  padding: 32px 20px 50px;
+}
+
+.washing-machine-page__title {
+  text-align: center;
+  color: #000000;
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 auto 34px;
+  max-width: 900px;
+}
+
+.washing-machine-page__grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.wm-card {
+  background: rgba(255,255,255,0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(26,40,68,0.08);
+  padding: 18px 18px 20px;
+  text-align: center;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wm-card__image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  margin-bottom: 18px;
+}
+
+.wm-card__image-wrap img {
+  height: 160px;
+  width: auto;
+  object-fit: contain;
+}
+
+.wm-card h2 {
+  color: #0c1b2d;
+  font-size: clamp(1.7rem, 2vw, 2.5rem);
+  line-height: 1.15;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.wm-card p {
+  color: #3b4958;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 auto 18px;
+  max-width: 300px;
+}
+
+.wm-card__tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.wm-card__tags span {
+  background: rgba(103, 200, 233, 0.18);
+  color: #0a6888;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.washing-machine-page__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.washing-machine-page__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #2b4cbe;
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.washing-machine-page__button svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+@media (max-width: 900px) {
+  .washing-machine-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wm-card {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .washing-machine-page {
+    padding: 24px 14px 36px;
+  }
+
+  .washing-machine-page__title {
+    font-size: 1.45rem;
+    margin-bottom: 24px;
+  }
+
+  .washing-machine-page__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wm-card {
+    min-height: 0;
+    padding: 16px 14px 18px;
+  }
+
+  .wm-card__image-wrap {
+    height: 170px;
+    margin-bottom: 12px;
+  }
+
+  .wm-card__image-wrap img {
+    max-height: 150px;
+  }
+
+  .wm-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .wm-card p {
+    font-size: .95rem;
+  }
+
+  .wm-card__tags {
+    gap: 8px;
+  }
+
+  .wm-card__tags span {
+    padding: 7px 12px;
+    font-size: .82rem;
+  }
+
+  .washing-machine-page__cta {
+    margin-top: 24px;
+  }
+
+  .washing-machine-page__button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 .ac-hero { background: linear-gradient(120deg, #f2f8ff, #fff); padding: 82px 0 88px; }
 .ac-hero__inner { align-items: center; display: grid; gap: 64px; grid-template-columns: 1fr 1fr; }
 .ac-eyebrow { color: #e99016; font-size: .78rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 15px; }
