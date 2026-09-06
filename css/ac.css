@@ -14,66 +14,89 @@ img { display: block; max-width: 100%; }
 .ac-header__call { background: #124d82; color: #fff; font-size: .85rem; padding: 10px 18px; }
 .ac-header__call:hover, .ac-button:hover { transform: translateY(-2px); }
 .washing-machine-page {
-  background: #ffffff;
-  padding: 32px 20px 50px;
+  background: #f0f2f6;
+  padding: 60px 20px 70px;
 }
 
 .washing-machine-page__title {
-  text-align: center;
-  color: #000000;
-  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  color: #111;
+  display: table;
+  font-size: 1.9rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 auto 34px;
+  margin: 0 auto 48px;
   max-width: 900px;
+  text-align: center;
+}
+
+.washing-machine-page__title::after {
+  background: #2b4cbe;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  height: 4px;
+  margin: 10px auto 0;
+  width: 55px;
 }
 
 .washing-machine-page__grid {
-  max-width: 1120px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
 }
 
-.wm-card {
-  background: rgba(255,255,255,0.6);
-  border-radius: 16px;
-  box-shadow: 0 4px 18px rgba(26,40,68,0.08);
-  padding: 18px 18px 20px;
+.ac-service-label {
+  display: table;
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: -24px auto 24px;
   text-align: center;
-  min-height: 430px;
+  border-bottom: 2px solid #2b4cbe;
+  padding-bottom: 5px;
+}
+
+.wm-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.09);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  padding: 28px 22px 24px;
+  text-align: center;
+  width: 255px;
 }
 
 .wm-card__image-wrap {
+  width: 250px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 190px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  overflow: hidden;
 }
 
 .wm-card__image-wrap img {
-  height: 160px;
-  width: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .wm-card h2 {
-  color: #0c1b2d;
-  font-size: clamp(1.7rem, 2vw, 2.5rem);
-  line-height: 1.15;
-  margin-bottom: 12px;
+  color: #111;
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .wm-card p {
-  color: #3b4958;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  color: #6c6b70;
+  font-size: .9rem;
+  line-height: 1.65;
   margin: 0 auto 18px;
   max-width: 300px;
 }
@@ -87,11 +110,11 @@ img { display: block; max-width: 100%; }
 }
 
 .wm-card__tags span {
-  background: rgba(103, 200, 233, 0.18);
-  color: #0a6888;
+  background: #eff9e9;
+  color: #123d70;
   border-radius: 999px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
+  padding: 7px 12px;
+  font-size: .82rem;
   font-weight: 500;
 }
 
@@ -99,6 +122,11 @@ img { display: block; max-width: 100%; }
   display: flex;
   justify-content: center;
   margin-top: 36px;
+  margin-bottom: 42px;
+}
+
+.washing-machine-page > .washing-machine-page__cta {
+  display: none;
 }
 
 .washing-machine-page__button {
@@ -123,45 +151,52 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 900px) {
   .washing-machine-page__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   .wm-card {
-    min-height: 400px;
+    width: 220px;
+  }
+
+  .wm-card__image-wrap {
+    width: 170px;
+    height: 130px;
   }
 }
 
 @media (max-width: 600px) {
   .washing-machine-page {
-    padding: 24px 14px 36px;
+    padding: 52px 14px 58px;
   }
 
   .washing-machine-page__title {
-    font-size: 1.45rem;
-    margin-bottom: 24px;
+    font-size: 1.6rem;
+    margin-bottom: 36px;
   }
 
   .washing-machine-page__grid {
-    grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .wm-card {
-    min-height: 0;
+    width: 100%;
+    max-width: 340px;
     padding: 16px 14px 18px;
   }
 
   .wm-card__image-wrap {
-    height: 170px;
-    margin-bottom: 12px;
+    width: 170px;
+    height: 130px;
+    margin-bottom: 14px;
   }
 
   .wm-card__image-wrap img {
-    max-height: 150px;
+    width: 100%;
+    height: 100%;
   }
 
   .wm-card h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .wm-card p {

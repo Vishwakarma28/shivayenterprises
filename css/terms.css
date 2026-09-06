@@ -15,6 +15,50 @@ body {
   line-height: 1.7;
 }
 
+.sticky-callbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 72px;
+  }
+
+  .sticky-callbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    padding: 10px 14px;
+    background: #fff;
+    box-shadow: 0 -3px 14px rgba(16, 27, 51, 0.16);
+  }
+
+  .sticky-callbar__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 360px);
+    min-height: 44px;
+    border-radius: 999px;
+    background: #2b4cbe;
+    color: #fff;
+    font-size: .86rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(16, 27, 51, 0.16);
+  }
+
+  .sticky-callbar__button svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+}
+
 .terms-hero {
   background: linear-gradient(115deg, #17558c, #398bd6);
   color: #fff;
