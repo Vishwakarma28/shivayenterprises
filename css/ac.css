@@ -1,10 +1,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: #fff; color: #10223e; font-family: 'Poppins', sans-serif; }
+body { background: #fdfdfd; color: #10223e; font-family: 'Poppins', sans-serif; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 .ac-container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
-.ac-header { background: #fff; border-bottom: 1px solid #e9eef4; position: sticky; top: 0; z-index: 10; }
+.ac-header { background: #fdfdfd; border-bottom: 1px solid #e9eef4; position: sticky; top: 0; z-index: 10; }
 .ac-header__inner { align-items: center; display: flex; gap: 26px; min-height: 70px; }
 .ac-logo { align-items: center; color: #124d82; display: flex; font-size: 1rem; font-weight: 800; gap: 10px; letter-spacing: .6px; margin-right: auto; }
 .ac-logo img { border-radius: 50%; height: 42px; object-fit: contain; width: 42px; }
@@ -14,7 +14,7 @@ img { display: block; max-width: 100%; }
 .ac-header__call { background: #124d82; color: #fff; font-size: .85rem; padding: 10px 18px; }
 .ac-header__call:hover, .ac-button:hover { transform: translateY(-2px); }
 .washing-machine-page {
-  background: #f0f2f6;
+  background: #fafafa;
   padding: 60px 20px 70px;
 }
 
@@ -151,7 +151,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 900px) {
   .washing-machine-page__grid {
-    gap: 18px;
+    gap: 26px;
   }
 
   .wm-card {
@@ -175,7 +175,7 @@ img { display: block; max-width: 100%; }
   }
 
   .washing-machine-page__grid {
-    gap: 16px;
+    gap: 40px;
   }
 
   .wm-card {
