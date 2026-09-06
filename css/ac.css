@@ -155,12 +155,12 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card {
-    width: 220px;
+    width: 255px;
   }
 
   .wm-card__image-wrap {
-    width: 170px;
-    height: 130px;
+    width: 250px;
+    height: 200px;
   }
 }
 
@@ -185,8 +185,8 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card__image-wrap {
-    width: 170px;
-    height: 130px;
+    width: 250px;
+    height: 200px;
     margin-bottom: 14px;
   }
 

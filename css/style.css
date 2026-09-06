@@ -734,12 +734,12 @@ img {
   }
 
   .service-card {
-    width: 220px;
+    width: 255px;
   }
 
   .service-card__img-wrap {
-    width: 170px;
-    height: 130px;
+    width: 250px;
+    height: 200px;
   }
 }
 
