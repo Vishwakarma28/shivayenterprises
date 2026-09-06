@@ -553,8 +553,8 @@ img {
    CONTACT SECTION
 ======================== */
 .contact {
-  background: #2133bb;
-  border-top: 4px solid #3d8de8;
+  background: #2b4cbe;
+  border-top: 4px solid #2b4cbe;
   padding: 68px 0 48px;
 }
 
@@ -621,8 +621,8 @@ img {
    FOOTER
 ======================== */
 .footer {
-  background: #2133bb;
-  border-top: 1px solid #10277f;
+  background: #2b4cbe;
+  border-top: 1px solid #2040b7;
   padding: 28px 0;
   text-align: center;
 }
