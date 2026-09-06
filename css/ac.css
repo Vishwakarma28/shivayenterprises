@@ -159,8 +159,8 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card__image-wrap {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 160px;
   }
 }
 
@@ -185,8 +185,8 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card__image-wrap {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 160px;
     margin-bottom: 14px;
   }
 
