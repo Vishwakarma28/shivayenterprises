@@ -752,7 +752,9 @@ img {
   }
 
   .floating-btns {
-    display: none;
+    right: 12px;
+    bottom: 82px;
+    gap: 25px;
   }
 
   .sticky-callbar {
