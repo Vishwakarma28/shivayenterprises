@@ -60,7 +60,7 @@ body {
 }
 
 .terms-hero {
-  background: linear-gradient(115deg, #17558c, #398bd6);
+  background: linear-gradient(115deg, #2b4cbe, #5396f3);
   color: #fff;
   padding: 82px 20px 78px;
   text-align: center;
@@ -141,7 +141,7 @@ body {
 
 .terms-footer {
   border-top: 4px solid #3d8de8;
-  background: #1b5688;
+  background: #2b4cbe;
   color: #9bb4d1;
   padding: 58px 20px 28px;
 }
