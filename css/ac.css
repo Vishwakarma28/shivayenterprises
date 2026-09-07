@@ -159,6 +159,11 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card__image-wrap {
+    width: 240px;
+    height: 200px;
+  }
+
+  .ac-service-grid .wm-card:nth-child(3) .wm-card__image-wrap {
     width: 200px;
     height: 160px;
   }
@@ -185,14 +190,19 @@ img { display: block; max-width: 100%; }
   }
 
   .wm-card__image-wrap {
-    width: 200px;
-    height: 160px;
+    width: 270px;
+    height: 240px;
     margin-bottom: 14px;
   }
 
   .wm-card__image-wrap img {
     width: 100%;
     height: 100%;
+  }
+
+  .ac-service-grid .wm-card:nth-child(3) .wm-card__image-wrap {
+    width: 200px;
+    height: 160px;
   }
 
   .wm-card h2 {
